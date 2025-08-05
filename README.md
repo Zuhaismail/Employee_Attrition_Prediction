@@ -1,83 +1,83 @@
 # 👨‍💼 Employee Attrition Prediction
 
-This project explores employee attrition using the IBM HR Analytics dataset. The aim is to identify patterns and factors influencing employees' decisions to leave the company, and to build predictive models that help HR teams anticipate and reduce turnover.
+This project analyzes employee data to explore the factors that influence employee attrition (i.e., leaving the company). It includes data exploration, visualizations, and machine learning model training to predict whether an employee is likely to leave or stay.
 
 ---
 
 ## 📌 Problem Statement
 
-As a data analyst, your task is to analyze employee data and uncover the key reasons behind attrition. After the exploratory analysis, you will develop machine learning models to predict whether an employee is likely to leave or stay.
+The goal of this project is to understand the key factors that contribute to employee attrition using real-world HR data. The project involves analyzing trends, creating visualizations, and building classification models to predict employee attrition.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-- Perform Exploratory Data Analysis (EDA) to understand attrition drivers.
-- Visualize important trends using charts and heatmaps.
-- Build and evaluate classification models to predict employee attrition.
+- Explore the dataset and identify patterns related to employee turnover.
+- Visualize important trends using graphs and statistical summaries.
+- Build and evaluate machine learning models to predict attrition.
 
 ---
 
 ## 📂 Dataset
 
 - 📥 **Source**: [IBM HR Analytics Attrition Dataset on Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
-- 🎯 **Target Variable**: `Attrition` (Yes = Employee Left, No = Employee Stayed)
+- 🎯 **Target Column**: `Attrition` (Yes = Employee Left, No = Employee Stayed)
 
-Each row represents an individual employee with details such as:
-- Age, Gender, Department, MonthlyIncome
-- JobSatisfaction, OverTime, DistanceFromHome
+The dataset contains various features such as:
+- Age, Gender, Department, DistanceFromHome
+- MonthlyIncome, JobSatisfaction, OverTime
 - YearsAtCompany, JobRole, and more
 
 ---
 
-## 📊 Part 1: Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
-Questions answered:
+This part of the project answers the following questions:
+
 1. Total number of employees and those who left.
-2. Average age comparison between leavers and stayers.
-3. Attrition rate across departments.
+2. Average age comparison (left vs stayed).
+3. Attrition rate by department.
 4. Correlation between distance from home and attrition.
-5. Impact of overtime on attrition.
-6. Relationship between income and attrition.
-7. Missing values analysis.
+5. Relationship between overtime and attrition.
+6. Impact of monthly income on attrition.
+7. Any missing values in the dataset.
 
 ---
 
-## 📈 Part 2: Visualizations
+## 📈 Visualizations
 
-The following plots were created to visualize trends:
-- ✅ Bar chart: Employee count by Attrition
+- ✅ Bar chart: Count of employees by Attrition
 - ✅ Boxplot: Monthly Income vs Attrition
 - ✅ Histogram: Age distribution by Attrition
 - ✅ Stacked bar chart: Department vs Attrition
 - ✅ Countplot: Job Satisfaction by Attrition
-- ✅ Heatmap: Correlation between numeric variables
+- ✅ Heatmap: Correlation matrix for numerical features
 
 ---
 
-## 🤖 Part 3: Machine Learning
+## 🤖 Machine Learning
 
-### ✅ Steps:
-1. Encoded categorical variables (OneHotEncoder)
-2. Prepared features (X) and target (y)
-3. Split the data into training and test sets (80/20)
-4. Trained two classification models:
+### ✅ Process:
+1. Encoded categorical variables using OneHotEncoding.
+2. Defined features (X) and target variable (y).
+3. Performed an 80/20 Train-Test split.
+4. Trained two models:
    - Logistic Regression
-   - Random Forest
-5. Evaluated models using:
-   - Accuracy
+   - Random Forest Classifier
+5. Evaluated the models using:
+   - Accuracy Score
    - Confusion Matrix
    - Classification Report
    - ROC Curve and AUC
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ Tools & Libraries
 
-- **Python**
-- **Pandas, NumPy**
-- **Matplotlib, Seaborn**
-- **Scikit-learn**
+- Python
+- Pandas, NumPy
+- Seaborn, Matplotlib
+- Scikit-learn
 
 ---
 
@@ -88,20 +88,19 @@ Employee_Attrition_Prediction/
 ├── Employee_Attrition_prediction.ipynb # Main Jupyter Notebook
 ├── README.md # Project documentation
 
-
 ---
 
 ## ✅ Key Insights
 
-- Employees who work **overtime** and earn **lower income** are more likely to leave.
-- **JobSatisfaction**, **YearsAtCompany**, and **WorkLifeBalance** also impact attrition.
-- Random Forest provided slightly better predictive performance than Logistic Regression.
+- Overtime, low monthly income, and low job satisfaction are major indicators of attrition.
+- Employees with longer tenure and higher satisfaction tend to stay longer.
+- Random Forest slightly outperformed Logistic Regression in prediction accuracy.
 
 ---
 
-## 🧾 Conclusion
+## 📘 Conclusion
 
-This project demonstrates how data analysis and machine learning can be used to tackle real-world HR problems. Predicting employee attrition can help companies retain top talent by identifying at-risk employees early.
+This project provides insight into the causes of employee attrition using data analysis and predictive modeling. The results can help HR departments make informed decisions about employee engagement and retention strategies.
 
 ---
 
@@ -109,5 +108,3 @@ This project demonstrates how data analysis and machine learning can be used to 
 
 **Zuha M. Ismail**  
 BS Software Engineering Student
-## 📁 Project Structure
-
